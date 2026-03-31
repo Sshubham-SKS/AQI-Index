@@ -1,133 +1,182 @@
-🌍 AQI Index Analysis Dashboard
+# 🌍 AQI Index Analysis Dashboard
 
-<img width="1240" height="698" alt="Screenshot 2026-04-01 022319" src="https://github.com/user-attachments/assets/feb9bfd0-54cd-44c5-9f32-16e34e30664c" />
+<img width="1240" height="698" alt="AQI Dashboard Overview" src="https://github.com/user-attachments/assets/feb9bfd0-54cd-44c5-9f32-16e34e30664c" />
 
-<img width="1241" height="698" alt="Screenshot 2026-04-01 023556" src="https://github.com/user-attachments/assets/755aa021-fa7d-417d-b204-2c699de4324b" />
+<img width="1241" height="698" alt="AQI Dashboard Detailed View" src="https://github.com/user-attachments/assets/755aa021-fa7d-417d-b204-2c699de4324b" />
 
-An interactive Air Quality Index (AQI) Analysis Dashboard built using Power BI, Python, and DAX to monitor pollution levels, analyze environmental trends, and generate actionable insights across cities and states in India.
+## 📌 Project Summary
 
-This project transforms raw AQI data into meaningful visualizations to support data-driven environmental awareness and decision-making.
+- Interactive **Air Quality Index (AQI) Analysis Dashboard**
+- Built using **Power BI, Python, and DAX**
+- Focused on analyzing pollution trends across **cities and states in India**
+- Designed to convert raw AQI data into actionable insights
+- Supports environmental monitoring and data-driven decision-making
 
-📊 Project Overview
+---
 
-Air pollution is a critical global issue. This dashboard provides a comprehensive analysis of AQI data, helping users understand:
+## 📊 Project Overview
 
-Pollution levels across cities and states
-Key pollutants affecting air quality
-Trends and seasonal variations
-High-risk and low-risk regions
+This dashboard helps analyze:
 
-The dashboard enables interactive exploration of AQI data using filters and dynamic visuals.
+- City-wise AQI levels
+- State-wise air quality distribution
+- Major pollutants affecting air quality
+- AQI categories from **Good** to **Hazardous**
+- Monthly and seasonal AQI trends
+- High-risk and low-risk pollution regions
 
-🧩 Dataset Description
-The dataset includes air quality measurements such as:
+---
 
-City / State
-AQI Value
-Pollutants (PM2.5, PM10, NO2, O3, CO, etc.)
-Date (Year, Month)
-AQI Category (Good, Moderate, Poor, Unhealthy, etc.)
+## 🧩 Dataset Description
 
-⚙️ Tech Stack
-Power BI → Dashboard creation & visualization
-Python (Pandas) → Data cleaning & preprocessing
-DAX → Measures and calculated columns
-SQL (optional) → Data aggregation
-🛠️ Data Engineering Approach
-Data Cleaning (Python)
-Removed null and inconsistent values
-Standardized pollutant columns
-Formatted date fields
-Data Transformation
-Created AQI categories based on value ranges
-Aggregated data by city, state, and time
-Data Modeling (Power BI)
-Established relationships between tables
-Optimized data model for performance
-DAX Measures
-Average AQI
-Maximum AQI
-Pollutant frequency
-Category distribution
+The dataset contains:
 
-📈 Dashboard Features
-🔹 KPI Overview
-Average AQI
-Maximum AQI
-Primary Pollutant
-AQI Category
-🔹 City-Level Analysis
-Top polluted cities
-AQI comparison across cities
-🔹 State-Level Analysis
-Interactive map visualization
-AQI distribution across India
-🔹 AQI Distribution
-Category-wise breakdown
-Visual segmentation of air quality levels
-🔹 Trend Analysis
-Monthly AQI trends
-Seasonal variation insights
-🔹 Pollutant Analysis
-Frequency of pollutants
-Dominant pollution contributors
+- **City**
+- **State**
+- **AQI Value**
+- **Pollutants**
+  - PM2.5
+  - PM10
+  - NO2
+  - O3
+  - CO
+- **Date Fields**
+  - Year
+  - Month
+- **AQI Category**
+  - Good
+  - Moderate
+  - Poor
+  - Unhealthy
+  - Very Unhealthy
+  - Hazardous
 
-🎨 Visualization Components
-KPI Cards
-Bar Charts
-Donut Chart
-Line Chart
-Map Visualization
-Slicers (Year, Month, State, Area)
+---
 
-🔍 Key Insights
-PM2.5 is the most dominant pollutant affecting air quality
-Major cities show consistently high AQI levels
-Significant variation exists between regions
-Seasonal patterns impact AQI trends
-Certain areas are identified as high-risk pollution zones
+## ⚙️ Tech Stack
 
-📌 Outcome
-Built an interactive and scalable dashboard
-Improved understanding of environmental data
-Enabled data-driven insights for pollution monitoring
-Demonstrated strong skills in data analysis and visualization
+- **Power BI** — Dashboard design and visualization
+- **Python (Pandas)** — Data cleaning and preprocessing
+- **DAX** — Measures, KPIs, and calculated columns
+- **SQL** — Optional data aggregation and querying
 
-🚀 How to Use
-Download the .pbix file from this repository
-Open using Power BI Desktop
-Use slicers to filter by:
-Year
-Month
-State
-Area
-Explore insights through interactive visuals
-📂 Project Structure
-AQI-Dashboard/
-│── data/
-│   ├── raw_data.csv
-│   ├── cleaned_data.csv
-│
-│── notebooks/
-│   ├── data_cleaning.ipynb
-│
-│── dashboard/
-│   ├── AQI_Dashboard.pbix
-│
-│── README.md
-🔗 Project Demo
+---
+
+## 🛠️ Data Engineering Approach
+
+### 1. Data Cleaning
+- Removed null values
+- Fixed inconsistent records
+- Standardized pollutant names and columns
+- Formatted date fields properly
+
+### 2. Data Transformation
+- Created AQI category ranges
+- Aggregated AQI values by city, state, and time
+- Prepared data for dashboard visuals
+
+### 3. Data Modeling
+- Built relationships between tables in Power BI
+- Structured the dataset for fast and interactive reporting
+
+### 4. DAX Measures
+Created measures such as:
+- **Average AQI**
+- **Maximum AQI**
+- **Primary Pollutant**
+- **Pollutant Frequency**
+- **AQI Category Distribution**
+
+---
+
+## 📈 Dashboard Features
+
+### 🔹 KPI Overview
+- Average AQI
+- Maximum AQI
+- Primary Pollutant
+- AQI Category
+
+### 🔹 City-Level Analysis
+- Top polluted cities
+- AQI comparison across cities
+
+### 🔹 State-Level Analysis
+- AQI by state
+- Interactive map visualization across India
+
+### 🔹 AQI Distribution
+- Category-wise AQI breakdown
+- Distribution of Good, Moderate, Poor, Unhealthy, and Hazardous levels
+
+### 🔹 Trend Analysis
+- AQI trend over time
+- Monthly pattern analysis
+- Seasonal variation tracking
+
+### 🔹 Pollutant Analysis
+- Pollutant occurrence frequency
+- Most dominant pollutants by region
+
+---
+
+## 🎨 Visualization Components
+
+- **KPI Cards**
+- **Bar Charts**
+- **Donut Chart**
+- **Line Chart**
+- **Map Visualization**
+- **Interactive Slicers**
+  - Year
+  - Month
+  - State
+  - Area
+
+---
+
+## 🔍 Key Insights
+
+- **PM2.5** is the most dominant pollutant in the dataset
+- Major cities show consistently high AQI values
+- Air quality varies significantly across states and cities
+- Seasonal trends clearly affect AQI levels
+- Some regions repeatedly fall under unhealthy AQI categories
+
+---
+
+## 📌 Outcome
+
+- Built an interactive and scalable AQI dashboard
+- Improved understanding of pollution data through visualization
+- Enabled quick analysis of air quality patterns
+- Supported environmental awareness using data
+- Demonstrated practical skills in:
+  - Power BI
+  - Python
+  - DAX
+  - Data Visualization
+  - Dashboard Design
+
+---
+
+## 🚀 How to Use
+
+1. Clone or download this repository
+2. Open the `.pbix` file in **Power BI Desktop**
+3. Load the dataset if required
+4. Use slicers to filter dashboard views by:
+   - Year
+   - Month
+   - State
+   - Area
+5. Explore AQI trends, pollutant insights, and location-based analysis
+
+---
+
+## ⭐ Support
+Star ⭐ the repo if you found it useful
+Share feedback / suggestions
 
 
-📌 Future Enhancements
-Real-time AQI data integration (API-based)
-Machine Learning model for AQI prediction
-Alert system for hazardous air quality
-Deployment on web dashboard
 
-📬 Contact
-
-If you have any questions or feedback, feel free to connect with me on LinkedIn or reach out!
-
-⭐ Support
-
-If you found this project helpful, consider giving it a ⭐ on GitHub!
